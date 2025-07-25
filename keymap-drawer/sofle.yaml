@@ -7,13 +7,13 @@ layers:
   - '3'
   - '4'
   - '5'
-  - BACKSPACE
   - '6'
   - '7'
   - '8'
   - '9'
   - '0'
-  - {t: ▽, type: trans}
+  - BACKSPACE
+  - ESC
   - Q
   - W
   - E
@@ -37,7 +37,7 @@ layers:
   - L
   - ;
   - ''''
-  - LEFT CONTROL
+  - {t: ▽, type: trans}
   - Z
   - X
   - C
@@ -51,14 +51,14 @@ layers:
   - .
   - /
   - system
-  - '&capture_screen'
+  - Gui+C
   - LALT
   - LGUI
   - Gui+LEFT CONTROL
   - SPACE
+  - TAB
   - ENTER
-  - ''
-  - ''
+  - RCTRL
   - ''
   - ''
   symbol:
