@@ -23,7 +23,7 @@
     combos {
         compatible = "zmk,combos";
 
-        alt_tab {
+        alt_esc {
             bindings = <&kp ESCAPE>;
             key-positions = <13 14>;
         };
