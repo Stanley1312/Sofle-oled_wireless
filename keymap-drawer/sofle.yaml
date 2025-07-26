@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: sofle}
 layers:
   mac: [ESC, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', BACKSPACE, symbol, Q, W, E, R, T, Y, U, I, O, P, \, LEFT SHIFT, A, S, D, F, G, H, J, K, L, ;, '''',
-    LEFT CONTROL, Z, X, C, V, B, MUTE, '', N, M, ',', ., /, symbol, Gui+L, LALT, LGUI, SPACE, Gui+LEFT CONTROL, TAB, ENTER, RCTRL, '', '']
+    LEFT CONTROL, Z, X, C, V, B, MUTE, '', N, M, ',', ., /, system, Gui+L, LALT, LGUI, SPACE, Gui+LEFT CONTROL, TAB, ENTER, RCTRL, '', '']
   symbol:
   - {t: ▽, type: trans}
   - F1
@@ -113,7 +113,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - {type: held}
   - ''
   - ''
   - ''
