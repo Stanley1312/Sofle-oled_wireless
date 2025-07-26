@@ -1,66 +1,7 @@
 layout: {zmk_keyboard: sofle}
 layers:
-  mac:
-  - symbol
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - BACKSPACE
-  - ESC
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - \
-  - LEFT SHIFT
-  - A
-  - S
-  - D
-  - F
-  - G
-  - H
-  - J
-  - K
-  - L
-  - ;
-  - ''''
-  - {t: ▽, type: trans}
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - MUTE
-  - ''
-  - N
-  - M
-  - ','
-  - .
-  - /
-  - system
-  - Gui+C
-  - LALT
-  - LGUI
-  - Gui+LEFT CONTROL
-  - SPACE
-  - TAB
-  - ENTER
-  - RCTRL
-  - ''
-  - ''
+  mac: [symbol, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', BACKSPACE, ESC, Q, W, E, R, T, Y, U, I, O, P, \, LEFT SHIFT, A, S, D, F, G, H, J, K, L, ;, '''',
+    LEFT CONTROL, Z, X, C, V, B, MUTE, '', N, M, ',', ., /, system, Gui+C, LALT, LGUI, SPACE, Gui+LEFT CONTROL, TAB, ENTER, RCTRL, '', '']
   symbol:
   - {type: held}
   - F1
@@ -75,8 +16,8 @@ layers:
   - F10
   - F11
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+Alt+LGUI
+  - Ctl+LEFT ALT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F12
