@@ -20,19 +20,7 @@
 
     conditional_layers { compatible = "zmk,conditional-layers"; };
 
-    combos {
-        compatible = "zmk,combos";
-
-        alt_esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <13 14>;
-        };
-
-        alt_tab {
-            bindings = <&kp TAB>;
-            key-positions = <25 26>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -48,11 +36,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&mo 1             &kp N1  &kp N2     &kp N3    &kp N4    &kp N5                                      &kp N6     &kp N7     &kp N8     &kp N9   &kp N0    &kp BACKSPACE
-&kp ESC           &kp Q   &kp W      &kp E     &kp R     &kp T                                       &kp Y      &kp U      &kp I      &kp O    &kp P     &kp BACKSLASH
+&kp ESC           &kp N1  &kp N2     &kp N3    &kp N4    &kp N5                                      &kp N6     &kp N7     &kp N8     &kp N9   &kp N0    &kp BACKSPACE
+&mo 1             &kp Q   &kp W      &kp E     &kp R     &kp T                                       &kp Y      &kp U      &kp I      &kp O    &kp P     &kp BACKSLASH
 &kp LEFT_SHIFT    &kp A   &kp S      &kp D     &kp F     &kp G                                       &kp H      &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LEFT_CONTROL  &kp Z   &kp X      &kp C     &kp V     &kp B      &kp C_MUTE              &none    &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH  &mo 1
-                          &kp LG(C)  &kp LALT  &kp LGUI  &kp SPACE  &kp LG(LEFT_CONTROL)    &kp TAB  &kp ENTER  &kp RCTRL  &none      &none
+                          &kp LG(L)  &kp LALT  &kp LGUI  &kp SPACE  &kp LG(LEFT_CONTROL)    &kp TAB  &kp ENTER  &kp RCTRL  &none      &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -74,7 +62,7 @@
 &trans  &trans  &kp LC(LEFT_ALT)  &trans  &trans  &kp F12                                              &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp UNDERSCORE  &kp GRAVE
 &trans  &trans  &trans            &trans  &trans  &trans                                               &kp MINUS         &kp EQUAL          &kp UP          &kp PLUS         &trans          &trans
 &trans  &trans  &trans            &trans  &trans  &trans   &trans                   &trans             &trans            &kp LEFT           &kp DOWN        &kp RIGHT_ARROW  &trans          &trans
-                &trans            &trans  &trans  &trans   &kp LC(LA(LG(RIGHT)))    &kp RC(RA(ENTER))  &kp RIGHT_SHIFT   &trans             &trans          &trans
+                &trans            &trans  &trans  &trans   &kp LC(LA(LG(RIGHT)))    &kp RC(RA(ENTER))  &trans            &trans             &trans          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
