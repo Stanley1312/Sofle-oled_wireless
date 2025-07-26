@@ -70,11 +70,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans  &kp F1            &kp F2            &kp F3  &kp F4  &kp F5                     &kp F6            &kp F7             &kp F8    &kp F9                &kp F10                &kp F11
-&trans  &kp LC(LA(LGUI))  &kp LC(LEFT_ALT)  &trans  &trans  &kp F12                    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SEMI  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PIPE
-&trans  &trans            &trans            &trans  &trans  &trans                     &kp MINUS         &kp EQUAL          &kp UP    &trans                &trans                 &trans
-&trans  &trans            &trans            &trans  &trans  &trans   &trans    &trans  &trans            &kp LEFT           &kp DOWN  &kp RIGHT_ARROW       &trans                 &trans
-                          &trans            &trans  &trans  &trans   &trans    &trans  &trans            &trans             &trans    &trans
+&trans  &kp F1  &kp F2            &kp F3  &kp F4  &kp F5                                               &kp F6            &kp F7             &kp F8          &kp F9           &kp F10         &kp F11
+&trans  &trans  &kp LC(LEFT_ALT)  &trans  &trans  &kp F12                                              &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp UNDERSCORE  &kp PIPE
+&trans  &trans  &trans            &trans  &trans  &trans                                               &kp MINUS         &kp EQUAL          &kp UP          &kp PLUS         &trans          &trans
+&trans  &trans  &trans            &trans  &trans  &trans   &trans                   &trans             &trans            &kp LEFT           &kp DOWN        &kp RIGHT_ARROW  &trans          &trans
+                &trans            &trans  &trans  &trans   &kp LC(LA(LG(RIGHT)))    &kp RC(RS(ENTER))  &trans            &trans             &trans          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -95,6 +95,16 @@
 &trans             &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none            &none            &bootloader                                &bootloader  &none  &none  &none  &none  &none
 &none              &none            &none            &none            &none            &none            &rgb_ug RGB_TOG    &none  &none        &none  &none  &none  &none  &none
                                     &none            &none            &none            &none            &none              &none  &none        &none  &none  &none
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
