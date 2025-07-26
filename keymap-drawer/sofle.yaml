@@ -1,9 +1,9 @@
 layout: {zmk_keyboard: sofle}
 layers:
-  mac: [symbol, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', BACKSPACE, ESC, Q, W, E, R, T, Y, U, I, O, P, \, LEFT SHIFT, A, S, D, F, G, H, J, K, L, ;, '''',
-    LEFT CONTROL, Z, X, C, V, B, MUTE, '', N, M, ',', ., /, symbol, Gui+C, LALT, LGUI, SPACE, Gui+LEFT CONTROL, TAB, ENTER, RCTRL, '', '']
+  mac: [ESC, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', BACKSPACE, symbol, Q, W, E, R, T, Y, U, I, O, P, \, LEFT SHIFT, A, S, D, F, G, H, J, K, L, ;, '''',
+    LEFT CONTROL, Z, X, C, V, B, MUTE, '', N, M, ',', ., /, symbol, Gui+L, LALT, LGUI, SPACE, Gui+LEFT CONTROL, TAB, ENTER, RCTRL, '', '']
   symbol:
-  - {type: held}
+  - {t: ▽, type: trans}
   - F1
   - F2
   - F3
@@ -15,7 +15,7 @@ layers:
   - F9
   - F10
   - F11
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - Ctl+LEFT ALT
   - {t: ▽, type: trans}
@@ -59,7 +59,7 @@ layers:
   - {t: ▽, type: trans}
   - Ctl+Alt+Gui+RIGHT
   - Ctl+AltGr+ENTER
-  - RIGHT SHIFT
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -124,8 +124,3 @@ layers:
   - ''
   - ''
   - ''
-combos:
-- p: [13, 14]
-  k: ESCAPE
-- p: [25, 26]
-  k: TAB
