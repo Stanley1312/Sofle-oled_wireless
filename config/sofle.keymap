@@ -65,7 +65,9 @@
                 &trans            &trans  &trans  &trans   &kp LC(LA(LG(RIGHT)))    &kp RC(RA(ENTER))  &trans            &trans             &trans          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_DN C_VOLUME_UP>,
+                <&inc_dec_kp PG_UP PG_DN>;
         };
 
         system {
